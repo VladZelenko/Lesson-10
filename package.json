@@ -1,23 +1,22 @@
 {
-  "name": "lesson10",
+  "name": "lesson-9",
   "version": "1.0.0",
-  "description": "flexbox",
+  "description": "home work 9 - npm, gulp, bower, bootstrap",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/VladZelenko/Lesson-10.git"
-  },
-  "author": "",
+  
+  "author": "VladZelenko",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/VladZelenko/Lesson-10/issues"
-  },
-  "homepage": "https://github.com/VladZelenko/Lesson-10#readme",
+  
+ 
   "devDependencies": {
+    "browser-sync": "^2.18.5",
     "gulp": "^3.9.1",
-    "gulp-sass": "^3.0.0"
-  }
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.0.0",
+    "gulp-uglifyjs": "^0.6.2"
+  },
+  "dependencies": {}
 }
