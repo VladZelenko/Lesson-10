@@ -2,6 +2,12 @@ var gulp = require('gulp'),
 		sass = require('gulp-sass'),
 		browserSync = require('browser-sync');
 
+
+gulp.task('sass', function () {
+  return gulp.src('src/style/sass/main.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('src/style'));
+=======
 gulp.task("sass", function() {
 	return gulp.src('app/sass/**/*.scss')
 		.pipe(sass())
@@ -23,4 +29,5 @@ gulp.task('watch', ['browser-sync', 'sass'], function() {
     gulp.watch('app/sass/**/*.scss', ['sass']);
     gulp.watch('app/**/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
+
 });
